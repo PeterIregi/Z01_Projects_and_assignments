@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii Art Web</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">ASCII ART WEB</h1>
+        <div class="content">
+            <p>Welcome to the ASCII Art Web application! This platform allows you to create stunning ASCII art with ease.</p>
+            <p>Get started by using our text-to-ASCII art generator.</p>
+           <form class="ascii-form"
+                hx-post="/ascii-art"
+                hx-target=".output-content"
+                hx-swap="innerHTML"
+                >
+             <!-- <form class="ascii-form"
+                method="POST"
+                action="/ascii-art"
+        >-->
+                <div class="ascii-input">
+                    <label for="text-input" class="text-input-label">Enter Text</label>
+                    <textarea type="text" id="id_text-input" name="text-input" class="text-input" required></textarea>
+                </div>  
+                <div class="banner-selector">
+                    <p for="banner-style" >Select Banner Style:</p>
+                    <div class="banner">
+                    <input type="radio" class="radio-button" id="standard" name="banner-style" value="standard">
+                    <label for="standard" class="banner-label">Standard</label>
+                    </div>
+
+                    <div class="banner">
+                        <input type="radio" class="radio-button" id="shadow" name="banner-style" value="shadow">
+                        <label for="shadow" class="banner-label">Shadow</label>
+                    </div>
+
+                    <div class="banner">
+                        <input type="radio" class="radio-button" id="thinkertoy" name="banner-style" value="thinkertoy">
+                        <label for="thinkertoy" class="banner-label">Thinkertoy</label>
+                    </div>
+                </div>              
+                <button type="submit" class="generate">Generate ASCII Art</button>
+            </form>
+
+            <div class="output">
+                <div class="g" style="display: flex; justify-content: space-between;">
+                    <h3 class="output-title">Output</h3>
+                    <button type="button" 
+                    hx-get="/clear" 
+                    hx-target=".output-content" hx-swap="innerHTML" 
+                    class="clear">Clear</button>
+                </div>
+                
+                <pre class="output-content">
+
+                </pre>
+            </div>
+    </div>
+    
+    
+</body>
+</html>
