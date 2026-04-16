@@ -7,7 +7,9 @@ import (
 )
 
 func main() {
-	fmt.Println(four.WeAreUnique("everyone", ""))
+	//Level one
 	one.Only1()
+	one.OnlyA()
+	fmt.Println(four.WeAreUnique("everyone", ""))
 
 }
