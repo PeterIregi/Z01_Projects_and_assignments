@@ -9,7 +9,12 @@ import (
 func main() {
 	//Level one
 	one.Only1()
+	fmt.Println()
 	one.OnlyA()
+	fmt.Println()
+	one.OnlyB()
+	fmt.Println()
+
 	fmt.Println(four.WeAreUnique("everyone", ""))
 
 }
