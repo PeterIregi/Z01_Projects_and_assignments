@@ -28,6 +28,11 @@ func main() {
 	fmt.Println(two.CountAlpha("Hello world"))
 	fmt.Println(two.CountAlpha("H e l l o"))
 	fmt.Println(two.CountAlpha("H1e2l3l4o"))
+	//CountCharacter
+	fmt.Println(two.CountChar("Hello World", 'l'))
+	fmt.Println(two.CountChar("5  balloons", 5))
+	fmt.Println(two.CountChar("   ", ' '))
+	fmt.Println(two.CountChar("The 7 deadly sins", '7'))
 
 	fmt.Println(four.WeAreUnique("everyone", ""))
 
