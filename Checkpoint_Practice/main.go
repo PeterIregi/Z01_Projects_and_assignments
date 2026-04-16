@@ -16,6 +16,8 @@ func main() {
 	fmt.Println()
 	one.OnlyF()
 	fmt.Println()
+	one.OnlyZ()
+	fmt.Println()
 
 	fmt.Println(four.WeAreUnique("everyone", ""))
 
