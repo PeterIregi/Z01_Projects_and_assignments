@@ -24,6 +24,10 @@ func main() {
 	//CheckNumber
 	fmt.Println(two.CheckNumber("Hello"))
 	fmt.Println(two.CheckNumber("Hello1"))
+	//CountAlpha
+	fmt.Println(two.CountAlpha("Hello world"))
+	fmt.Println(two.CountAlpha("H e l l o"))
+	fmt.Println(two.CountAlpha("H1e2l3l4o"))
 
 	fmt.Println(four.WeAreUnique("everyone", ""))
 
