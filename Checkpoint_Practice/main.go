@@ -38,6 +38,11 @@ func main() {
 	fmt.Print(two.PrintIf("abc"))
 	fmt.Print(two.PrintIf(""))
 	fmt.Print(two.PrintIf("14"))
+	//PrintIfNot
+	fmt.Print(two.PrintIfNot("abcdefz"))
+	fmt.Print(two.PrintIfNot("abc"))
+	fmt.Print(two.PrintIfNot(""))
+	fmt.Print(two.PrintIfNot("14"))
 
 
 	fmt.Println(four.WeAreUnique("everyone", ""))
