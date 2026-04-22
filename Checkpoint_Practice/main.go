@@ -33,6 +33,12 @@ func main() {
 	fmt.Println(two.CountChar("5  balloons", 5))
 	fmt.Println(two.CountChar("   ", ' '))
 	fmt.Println(two.CountChar("The 7 deadly sins", '7'))
+	//printif
+	fmt.Print(two.PrintIf("abcdefz"))
+	fmt.Print(two.PrintIf("abc"))
+	fmt.Print(two.PrintIf(""))
+	fmt.Print(two.PrintIf("14"))
+
 
 	fmt.Println(four.WeAreUnique("everyone", ""))
 
