@@ -43,6 +43,10 @@ func main() {
 	fmt.Print(two.PrintIfNot("abc"))
 	fmt.Print(two.PrintIfNot(""))
 	fmt.Print(two.PrintIfNot("14"))
+	//RectPerimeter
+	fmt.Println(RectPerimeter(10, 2))
+	fmt.Println(RectPerimeter(434343, 898989))
+	fmt.Println(RectPerimeter(10, -2))
 
 
 	fmt.Println(four.WeAreUnique("everyone", ""))
