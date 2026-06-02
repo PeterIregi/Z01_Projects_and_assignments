@@ -19,34 +19,42 @@ func main() {
 	fmt.Println()
 	one.OnlyZ()
 	fmt.Println()
+	fmt.Println("End of level 1")
 
 	//Level 2
 	//CheckNumber
+	fmt.Println("Level 2")
 	fmt.Println(two.CheckNumber("Hello"))
 	fmt.Println(two.CheckNumber("Hello1"))
+	fmt.Println("End of CheckNumber")
 	//CountAlpha
 	fmt.Println(two.CountAlpha("Hello world"))
 	fmt.Println(two.CountAlpha("H e l l o"))
 	fmt.Println(two.CountAlpha("H1e2l3l4o"))
+	fmt.Println("End of Count Alpha")
 	//CountCharacter
 	fmt.Println(two.CountChar("Hello World", 'l'))
 	fmt.Println(two.CountChar("5  balloons", 5))
 	fmt.Println(two.CountChar("   ", ' '))
 	fmt.Println(two.CountChar("The 7 deadly sins", '7'))
+	fmt.Println("End of Count Character")
 	//printif
 	fmt.Print(two.PrintIf("abcdefz"))
 	fmt.Print(two.PrintIf("abc"))
 	fmt.Print(two.PrintIf(""))
 	fmt.Print(two.PrintIf("14"))
+	fmt.Println("End of Print if")
 	//PrintIfNot
 	fmt.Print(two.PrintIfNot("abcdefz"))
 	fmt.Print(two.PrintIfNot("abc"))
 	fmt.Print(two.PrintIfNot(""))
 	fmt.Print(two.PrintIfNot("14"))
+	fmt.Println("End of Print if not")
 	//RectPerimeter
-	fmt.Println(RectPerimeter(10, 2))
-	fmt.Println(RectPerimeter(434343, 898989))
-	fmt.Println(RectPerimeter(10, -2))
+	fmt.Println(two.RectPerimeter(10, 2))
+	fmt.Println(two.RectPerimeter(434343, 898989))
+	fmt.Println(two.RectPerimeter(10, -2))
+	fmt.Println("End of RectPerimeter")
 
 
 	fmt.Println(four.WeAreUnique("everyone", ""))
