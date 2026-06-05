@@ -4,12 +4,12 @@ func HashCode(dec string) string{
 	size := len(dec)
 	result:= []rune{}
 
-	for i , ch := range dec{
+	for _ , ch := range dec{
 		h := (int(ch) + size)%127
 		if h < 33 {
 			h +=33
 		}
-		result [i]=rune(h)
+		result=append(result,rune(h))
 	}
 	return string(result)
 }
