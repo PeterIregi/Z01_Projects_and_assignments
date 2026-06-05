@@ -1,12 +1,13 @@
 package level_2
 
 func RetainFirstHalf(str string) string {
-	firstHalf := ""
-	if len(str)%2 != 0 {
-		firstHalf = str[:(len(str)/2)-1]
-
-	} else {
-		firstHalf = str[:(len(str)/2)-1]
+	if len(str) == 0 {
+		return ""
 	}
-	return firstHalf
+
+	if len(str) == 1 {
+		return str
+	}
+
+	return str[:len(str)/2]
 }
